@@ -1,0 +1,13 @@
+{
+  "name": "Muhammed Enes Yellice | Sr. Software Developer & Founder",
+  "short_name": "Enes Yellice",
+  "description": "Sr. Software Developer & Founder @ Harp Global. Full Stack, Web3/Blockchain & Cybersecurity expert.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050014",
+  "theme_color": "#9d00ff",
+  "icons": [
+    { "src": "android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

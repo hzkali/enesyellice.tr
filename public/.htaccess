@@ -1,0 +1,12 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Redirect /index.html (or /index) to / so the extension never shows in the address bar
+RewriteCond %{THE_REQUEST} /index(\.html)?([?\s]) [NC]
+RewriteRule ^(.*)index(\.html)?$ /$1 [R=301,L]
+
+# Hide .html extension for any future pages: /about instead of /about.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
