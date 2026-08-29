@@ -352,34 +352,32 @@ p.xl{
     h6{ font-size: 20px; line-height: 26px; letter-spacing: -0.1px; }
     p { font-size: 16px; line-height: 26px; }
 
-    @media screen and (min-width:1024px) {
-
-      .fade-up-anime{
-        transform: translateY(100px);
-        -webkit-transform: translateY(100px);
-        -moz-transform: translateY(100px);
-        -ms-transform: translateY(100px);
-        -o-transform: translateY(100px);
-        opacity: 0;
-    }
-    }
-    
-    
-      .text-anime .line-wrapper {
-        overflow: hidden;
-      }
-    
-      .text-anime .text-lines {
-        transform: translateY(100%);
-        -webkit-transform: translateY(100%);
-        -moz-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-        -o-transform: translateY(100%);
-      }
-      
-
     .service-name{
       font-size: 26px;
+    }
+  }
+
+  @media screen and (min-width:1024px) {
+
+    .fade-up-anime{
+      transform: translateY(100px);
+      -webkit-transform: translateY(100px);
+      -moz-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+      -o-transform: translateY(100px);
+      opacity: 0;
+    }
+
+    .text-anime .line-wrapper {
+      overflow: hidden;
+    }
+
+    .text-anime .text-lines {
+      transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
     }
   }
 
@@ -786,7 +784,18 @@ section{
   background: #ffffff3d;
 }
 
-  
+@media (max-width: 767px){
+  .resume-section .experience-item{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .resume-section .experience-item .job-title{
+    font-weight: 600;
+    color: #fff;
+  }
+}
 
 /* ==========================================================================
 04 - SERVICES SECTION STYLES
